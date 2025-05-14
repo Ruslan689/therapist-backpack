@@ -11,8 +11,10 @@
         <div class="container">
             <h1>Backpack for Therapist</h1>
             <div class="nav-buttons">
-                <a href="#instruction" class="btn instruction-btn">Інструкція</a>
+                <a href="#instruction" class="btn instruction-btn">Базова Інструкція</a>
+                <a href="#full_instruction" class="btn instruction-btn">Повна Інструкція</a>
                 <a href="#youtube" class="btn youtube-btn">YouTube Плейлист</a>
+
             </div>
         </div>
     </header>
@@ -38,12 +40,9 @@
             <div class="container">
                 <h2>Інструкція</h2>
                 
-                <!-- Початок інструкції -->
                 <div class="manual-content">
-                    <!-- Секції інструкції -->
                     <article class="manual-section">
                         <h3>1. Запах</h3>
-                        <div class="warning-banner">Сертифіковано відповідно до стандартів безпеки ISO 9001</div>
                         <h4>Інструменти:</h4>
                         <ul class="tools-list">
                             <li>Набір ефірних олій (5 мл кожна)</li>
@@ -51,7 +50,6 @@
                             <li>Аромадифузор</li>
                         </ul>
                         
-                        <!-- Підсекції інструкції -->
                         <div class="subsection">
                             <h4>Вибір аромату:</h4>
                             <div class="grid-container">
@@ -66,7 +64,8 @@
                             </div>
                         </div>
                     </article>
-                    <!-- Секція Слух -->
+
+                    
                     <article class="manual-section">
                         <h3>2. Слух</h3>
                         <h4>Інструменти:</h4>
@@ -96,7 +95,6 @@
                         </div>
                     </article>
 
-                    <!-- Секція Смак -->
                     <article class="manual-section">
                         <h3>3. Смак</h3>
                         <div class="grid-container three-col">
@@ -123,7 +121,6 @@
                         </div>
                     </article>
 
-                    <!-- Секція Дотик -->
                     <article class="manual-section">
                         <h3>4. Дотик</h3>
                         <div class="touch-grid">
@@ -145,7 +142,6 @@
                         </div>
                     </article>
 
-                    <!-- Секція Зір -->
                     <article class="manual-section">
                         <h3>5. Зір</h3>
                         <div class="vision-container">
@@ -204,31 +200,40 @@
                                 <ul class="warning-list">
                                     <li>Гарантія 12 місяців</li>
                                     <li>Не розбирати самостійно</li>
-                                    <li>Сертифікація ISO 9001</li>
                                 </ul>
                             </div>
                         </div>
                     
-                        <div class="contact-section">
+                        <div class="contact-section", id = "full_instruction">
                             <div class="contact-info">
                                 <h4>Зв'яжіться з нами:</h4>
                                 <div class="contact-items">
                                     <a href="tel:0-800-123-456" class="contact-link">
-                                        📞 0-800-123-456 (цілодобово)
+                                        📞 0-800-123-456
                                     </a>
                                     <a href="mailto:support@psychobag.com" class="contact-link">
                                         ✉️ support@psychobag.com
                                     </a>
-                                    <a href="https://www.psychobag.com/support" target="_blank" class="contact-link">
-                                        🌐 www.psychobag.com/support
+                                    <a href="https://ruslan689.github.io/therapist-backpack/" target="_blank" class="contact-link">
+                                        🌐 www.therapist-backpack
                                     </a>
                                 </div>
                             </div>
                             
-                            <div class="qr-section">
-                                <div class="qr-code">
-                                    <img src="qr-instruction.png" alt="QR-код підтримки">
-                                    <p>Відскануйте для відеоінструкцій</p>
+                            <div class="download-section">
+                                <div class="download-buttons">
+                                    <a href="Методичний_збірник_вправ_pdf_Рюкзак.pdf" 
+                                    class="download-button" 
+                                    download>
+                                        📥 Завантажити Методичний збірник (PDF)
+                                    </a>
+                                    <div class="resource-cards">
+                                        <a href="Ресурсні_картки.Інструкція.pdf" 
+                                        class="download-button"
+                                        download>
+                                            📑 Ресурсні картки. Інструкція (PDF)
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -236,13 +241,11 @@
                 </div>
             </div>
         </section>
-
-        <!-- ... решта контенту ... -->
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>© 2023 Backpack for Therapist. Всі права захищені</p>
+            <p>© 2023 Backpack for Therapist</p>
         </div>
     </footer>
 </body>

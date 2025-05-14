@@ -102,7 +102,6 @@ body {
     border-left: 4px solid #ffc107;
 }
 
-/* Застереження */
 .safety-section {
     margin-top: 3rem;
 }
@@ -118,7 +117,6 @@ body {
     border-left: 4px solid #dc3545;
 }
 
-/* Футер */
 .footer {
     background: #2c3e50;
     color: white;
@@ -127,7 +125,6 @@ body {
     margin-top: 3rem;
 }
 
-/* Адаптивність */
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2rem;
@@ -142,15 +139,12 @@ body {
         grid-template-columns: 1fr;
     }
 }
-/* Стилі для нових секцій */
 
-/* Секція слуху */
 .warning-card.blue {
     background: #d1ecf1;
     border-left: 4px solid #0dcaf0;
 }
 
-/* Секція смаку */
 .grid-container.three-col {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -173,7 +167,6 @@ body {
     margin: 1.5rem 0;
 }
 
-/* Секція дотику */
 .touch-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -199,7 +192,6 @@ body {
 .texture-preview.jute { background: url('jute-texture.jpg'); }
 .texture-preview.liquid { background: url('liquid-texture.jpg'); }
 
-/* Секція зору */
 .vision-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -238,7 +230,6 @@ body {
     text-align: center;
 }
 
-/* Адаптація */
 @media (max-width: 768px) {
     .grid-container.three-col {
         grid-template-columns: 1fr;
@@ -253,7 +244,6 @@ body {
     }
 }
 
-/* Стилі для секції застережень */
 .safety-section {
     margin-top: 4rem;
     padding: 2rem;
@@ -378,4 +368,34 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+.download-button {
+    display: block;
+    padding: 12px 20px;
+    background: #f0f4f8;
+    border: 2px solid #2a4365;
+    border-radius: 8px;
+    color: #2a4365;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.download-button:hover {
+    background: #2a4365;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.resource-cards {
+    margin-top: 10px;
 }
