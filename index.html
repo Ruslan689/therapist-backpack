@@ -3,250 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backpack for Therapist</title>
+    <title>Therapist's Backpack | Професійний інструментарій</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <h1>Backpack for Therapist</h1>
-            <div class="nav-buttons">
-                <a href="#instruction" class="btn instruction-btn">Базова Інструкція</a>
-                <a href="#full_instruction" class="btn instruction-btn">Повна Інструкція</a>
-                <a href="#youtube" class="btn youtube-btn">YouTube Плейлист</a>
-
+        <nav class="nav-container">
+            <div class="nav-brand">🧑⚕️ Therapist's Backpack</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Про рюкзак</a>
+                <a href="#senses" class="nav-link">Модулі</a>
+                <a href="#play-list" class="nav-link">Плей-лист</a>
+                <a href="#downloads" class="nav-link">Матеріали</a>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="main-content">
-        <section id="youtube" class="section youtube-section">
-            <div class="container">
-                <h2>Плейлист</h2>
-                <div class="video-container">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/videoseries?list=PLMkgJjgsuQwVzJnKl9aKKJhFrOcBpUoXV" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+    <section class="hero-section" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Професійний терапевтичний рюкзак</h1>
+                <p class="hero-text">Ергономічне рішення для мультисенсорної терапії</p>
             </div>
-        </section>
+            <div class="hero-images">
+                <img 
+                    src="Data/backpack1.JPG" 
+                    alt="Рюкзак" 
+                    class="hero-img"
+                    loading="lazy"
+                    width="3688"
+                    height="4610"
+                >
+                <img 
+                    src="Data/backpack2.JPG" 
+                    alt="Внутрішнє наповнення" 
+                    class="hero-img"
+                    loading="lazy"
+                    width="3688"
+                    height="4610"
+                >
+            </div>
+        </div>
+    </section>
 
-        <section id="instruction" class="section instruction-section">
-            <div class="container">
-                <h2>Інструкція</h2>
-                
-                <div class="manual-content">
-                    <article class="manual-section">
-                        <h3>1. Запах</h3>
-                        <h4>Інструменти:</h4>
-                        <ul class="tools-list">
-                            <li>Набір ефірних олій (5 мл кожна)</li>
-                            <li>Аромапалички (10 шт)</li>
-                            <li>Аромадифузор</li>
+    <section class="senses-section" id="senses">
+        <div class="section-container">
+            <h2 class="section-title">Сенсорні модулі</h2>
+            
+            <div class="senses-grid">
+                <!-- Smell Module -->
+                <article class="module-card">
+                    <img src="Data/smell.JPG" alt="Нюх" class="module-image" loading="lazy" width="800" height="600">
+                    <div class="module-content">
+                        <h3>Нюх</h3>
+                        <ul class="module-features">
+                            <li>Блотери для нанесення запаху</li>
+                            <li>5 ефірних олій: </li>
+                            <li>лимонна</li>
+                            <li>жасминова</li>
+                            <li>лемонграсова</li>
+                            <li>ванільна</li>
+                            <li>мʼятна</li>
                         </ul>
-                        
-                        <div class="subsection">
-                            <h4>Вибір аромату:</h4>
-                            <div class="grid-container">
-                                <div class="card">
-                                    <h5>Різкі аромати</h5>
-                                    <p>Цитрусові, імбир<br>Використовувати не більше 3 крапель</p>
-                                </div>
-                                <div class="card">
-                                    <h5>Спокійні аромати</h5>
-                                    <p>Лаванда, ваніль<br>Не для дітей до 3 років</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    
-                    <article class="manual-section">
-                        <h3>2. Слух</h3>
-                        <h4>Інструменти:</h4>
-                        <ul class="tools-list">
-                            <li>Портативна колонка JBL Charge 5 (IP67)</li>
-                            <li>Флешка з аудіофайлами (32 ГБ)</li>
-                            <li>Дитячий ксилофон (6 нот)</li>
-                        </ul>
-
-                        <div class="subsection">
-                            <h4>Підключення:</h4>
-                            <div class="grid-container">
-                                <div class="card">
-                                    <h5>USB режим</h5>
-                                    <p>Вставте флешку → оберіть папку → регулюйте гучність (макс. 80 дБ)</p>
-                                </div>
-                                <div class="card">
-                                    <h5>Bluetooth</h5>
-                                    <p>Утримуйте кнопку "Pair" 3 сек → виберіть "JBL_Charge5" на пристрої</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="warning-card blue">
-                            <h4>Важливо!</h4>
-                            <p>Використовуйте ксилофон разом із звуками природи. Не кидайте!</p>
-                        </div>
-                    </article>
-
-                    <article class="manual-section">
-                        <h3>3. Смак</h3>
-                        <div class="grid-container three-col">
-                            <div class="card taste-card yellow">
-                                <h5>Цитрус</h5>
-                                <p>Жовта упаковка<br>Для активізації</p>
-                            </div>
-                            <div class="card taste-card red">
-                                <h5>Імбир</h5>
-                                <p>Червона упаковка<br>Енергетичний ефект</p>
-                            </div>
-                            <div class="card taste-card brown">
-                                <h5>Шоколад</h5>
-                                <p>Коричнева упаковка<br>Релаксація</p>
-                            </div>
-                        </div>
-
-                        <div class="usage-instruction">
-                            <h4>Інструкція з використання:</h4>
-                            <ul>
-                                <li>Діти 4-6 років: розрізати на 4 частини</li>
-                                <li>Дорослі: розсмоктувати повільно</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="manual-section">
-                        <h3>4. Дотик</h3>
-                        <div class="touch-grid">
-                            <div class="texture-card">
-                                <div class="texture-preview fur"></div>
-                                <h5>Хутро</h5>
-                                <p>М'яка текстура для заспокоєння</p>
-                            </div>
-                            <div class="texture-card">
-                                <div class="texture-preview jute"></div>
-                                <h5>Джут</h5>
-                                <p>Стимулююча поверхня</p>
-                            </div>
-                            <div class="texture-card">
-                                <div class="texture-preview liquid"></div>
-                                <h5>Ньютонівська рідина</h5>
-                                <p>1 склянка крохмалю + ½ води</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="manual-section">
-                        <h3>5. Зір</h3>
-                        <div class="vision-container">
-                            <div class="vision-item">
-                                <h4>Калейдоскоп</h4>
-                                <p>Дивіться 1-2 хвилини, обертаючи для зміни візерунків</p>
-                            </div>
-                            <div class="vision-item">
-                                <h4>Ліхтарики</h4>
-                                <div class="color-grid">
-                                    <div class="color-box blue-bg">Синій<br>Спокій</div>
-                                    <div class="color-box yellow-bg">Жовтий<br>Енергія</div>
-                                    <div class="color-box green-bg">Зелений<br>Баланс</div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <div class="safety-section">
-                        <h3 class="safety-title">Застереження Безпеки</h3>
-                        
-                        <div class="warnings-grid">
-                            <div class="warning-card red">
-                                <div class="warning-icon">❗</div>
-                                <h4>Ефірні олії</h4>
-                                <ul class="warning-list">
-                                    <li>Не використовувати для вагітних</li>
-                                    <li>Заборонено при астмі</li>
-                                    <li>Уникати контакту зі шкірою</li>
-                                </ul>
-                            </div>
-                    
-                            <div class="warning-card orange">
-                                <div class="warning-icon">⚠️</div>
-                                <h4>Цукерки</h4>
-                                <ul class="warning-list">
-                                    <li>Містять цукор</li>
-                                    <li>Не рекомендовано при діабеті</li>
-                                    <li>Термін придатності: 180 днів</li>
-                                </ul>
-                            </div>
-                    
-                            <div class="warning-card purple">
-                                <div class="warning-icon">🔌</div>
-                                <h4>Електричні пристрої</h4>
-                                <ul class="warning-list">
-                                    <li>Вимикати під час зарядки</li>
-                                    <li>Не занурювати у воду</li>
-                                    <li>Замінюйте батарейки вчасно</li>
-                                </ul>
-                            </div>
-                    
-                            <div class="warning-card gray">
-                                <div class="warning-icon">🔧</div>
-                                <h4>Гарантія та Обслуговування</h4>
-                                <ul class="warning-list">
-                                    <li>Гарантія 12 місяців</li>
-                                    <li>Не розбирати самостійно</li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-                        <div class="contact-section", id = "full_instruction">
-                            <div class="contact-info">
-                                <h4>Зв'яжіться з нами:</h4>
-                                <div class="contact-items">
-                                    <a href="tel:0-800-123-456" class="contact-link">
-                                        📞 0-800-123-456
-                                    </a>
-                                    <a href="mailto:support@psychobag.com" class="contact-link">
-                                        ✉️ support@psychobag.com
-                                    </a>
-                                    <a href="https://ruslan689.github.io/therapist-backpack/" target="_blank" class="contact-link">
-                                        🌐 www.therapist-backpack
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="download-section">
-                                <div class="download-buttons">
-                                    <a href="Методичний_збірник_вправ_pdf_Рюкзак.pdf" 
-                                    class="download-button" 
-                                    download>
-                                        📥 Завантажити Методичний збірник (PDF)
-                                    </a>
-                                    <div class="resource-cards">
-                                        <a href="Ресурсні_картки.Інструкція.pdf" 
-                                        class="download-button"
-                                        download>
-                                            📑 Ресурсні картки. Інструкція (PDF)
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </main>
+                </article>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2023 Backpack for Therapist</p>
+                <!-- Hearing Module -->
+                <article class="module-card">
+                    <img src="Data/hearing.JPG" alt="Нюх" class="module-image" loading="lazy" width="800" height="600">
+                    <div class="module-content">
+                        <h3>Слух</h3>
+                        <ul class="module-features">
+                            <li>портативна колонка</li>
+                            <li>підібраний плейлист мелодій</li>
+                            <li>маракас</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Taste Module -->
+                <article class="module-card">
+                    <img src="Data/taste.JPG" alt="Нюх" class="module-image" loading="lazy" width="800" height="600">
+                    <div class="module-content">
+                        <h3>Смак</h3>
+                        <ul class="module-features">
+                            <li>5 карамельних цукерок зі смаками:</li>
+                            <li>шоколад</li>
+                            <li>апельсин</li>
+                            <li>барбарис</li>
+                            <li>кавун</li>
+                            <li>чорна смородина</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Touch Module -->
+                <article class="module-card">
+                    <img src="Data/touch.JPG" alt="Нюх" class="module-image" loading="lazy" width="800" height="600">
+                    <div class="module-content">
+                        <h3>Дотик</h3>
+                        <ul class="module-features">
+                            <li>5 наборів тканин різної текстури</li>
+                            <li>5 багаторазових грілок</li>
+                            <li>сенсорний пухнастий мʼячик</li>
+                            <li>набір для створення неоньютонівської рідини</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Sight Module -->
+                <article class="module-card">
+                    <img src="Data/sight.JPG" alt="Нюх" class="module-image" loading="lazy" width="800" height="900">
+                    <div class="module-content">
+                        <h3>Зір</h3>
+                        <ul class="module-features">
+                            <li>метафоричні картки (розроблені Карітас)</li>
+                            <li>калейдоскоп</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id = "play-list">
+        <div class="section-container">
+            <h2 class="section-title">Плей-лист</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/videoseries?list=PLMkgJjgsuQwVzJnKl9aKKJhFrOcBpUoXV" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section class="downloads-section" id="downloads">
+        <div class="section-container">
+            <h2 class="section-title">Матеріали</h2>
+            <div class="downloads-grid">
+                <a href="Data/Методичний_збірник_вправ_pdf_Рюкзак.pdf" class="download-card" download>
+                    <div class="download-icon">📚</div>
+                    <div class="download-info">
+                        <h3>Методичний збірник</h3>
+                        <p>PDF · 18MB</p>
+                    </div>
+                </a>
+
+                <a href="Data/Ресурсні_картки.Інструкція.pdf" class="download-card" download>
+                    <div class="download-icon">🃏</div>
+                    <div class="download-info">
+                        <h3>Ресурсні картки</h3>
+                        <p>PDF · 12MB</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">© 2025 Therapist's Backpack</div>
+            <div class="footer-contacts">
+                <a href="tel:0800123456" class="contact-item">📞 0 800 123 456</a>
+                <a href="mailto:support@therapybackpack.com" class="contact-item">📩 support@therapybackpack.com</a>
+            </div>
         </div>
     </footer>
+
+
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal" id="smellModal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <h3>Ароматерапевтичний модуль</h3>
+            
+            <div class="modal-gallery">
+                <img src="Data/Additional/smell-1.jpg" alt="Набір ефірних олій" class="modal-detail-img">
+                <img src="Data/Additional/smell-2.jpg" alt="Використання дифузора" class="modal-detail-img">
+                <img src="Data/Additional/smell-3.jpg" alt="Аромакартки" class="modal-detail-img">
+            </div>
+
+            <div class="usage-instruction">
+                <h4>Правила використання:</h4>
+                <ul>
+                    <li>🎯 Оптимальна кількість олії: 2-3 краплі</li>
+                    <li>⏱ Тривалість сеансу: 15-20 хвилин</li>
+                    <li>📌 Безпечна відстань: не менше 1 метра від дитини</li>
+                    <li>🧼 Очищайте дифузор після кожного використання</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="hearingModal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <h3>Аудіотерапевтичний модуль</h3>
+            
+            <div class="modal-gallery">
+                <img src="Data/Additional/hearing-1.jpg" alt="Акустична система" class="modal-detail-img">
+                <img src="Data/Additional/hearing-2.jpg" alt="Керування звуком" class="modal-detail-img">
+            </div>
+
+            <div class="usage-instruction">
+                <h4>Інструкція:</h4>
+                <ul>
+                    <li>🔊 Максимальна гучність: 75 дБ</li>
+                    <li>🎵 Рекомендовані треки: природні звуки, класична музика</li>
+                    <li>⚡ Заряджайте пристрій повністю перед сеансом</li>
+                    <li>👂 Використовуйте з дітьми від 3 років</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="tasteModal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <h3>Смаковий модуль</h3>
+            
+            <div class="modal-gallery">
+                <img src="Data/Additional/taste-1.jpg" alt="Набір цукерок" class="modal-detail-img">
+                <img src="Data/Additional/taste-2.jpg" alt="Використання" class="modal-detail-img">
+            </div>
+
+            <div class="usage-instruction">
+                <h4>Протокол використання:</h4>
+                <ul>
+                    <li>🍬 Доза для дорослих: 1 цукерка на сеанс</li>
+                    <li>👶 Для дітей 4-6 років: ¼ цукерки</li>
+                    <li>🚫 Протипоказання: алергія на лактозу</li>
+                    <li>🌡 Зберігати при температурі до 25°C</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="touchModal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <h3>Тактильний модуль</h3>
+            
+            <div class="modal-gallery">
+                <img src="Data/Additional/touch-1.jpg" alt="Текстуровані матеріали" class="modal-detail-img">
+                <img src="Data/Additional/touch-2.jpg" alt="Ньютонівська рідина" class="modal-detail-img">
+            </div>
+
+            <div class="usage-instruction">
+                <h4>Правила безпеки:</h4>
+                <ul>
+                    <li>🧤 Використовуйте одноразові рукавички</li>
+                    <li>💦 Дезинфікуйте поверхні після кожного використання</li>
+                    <li>🧒 Рекомендований вік: від 5 років</li>
+                    <li>⚠️ Уникайте контакту з очима</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="sightModal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <h3>Візуальний модуль</h3>
+            
+            <div class="modal-gallery">
+                <img src="Data/Additional/sight-1.jpg" alt="Калейдоскоп" class="modal-detail-img">
+                <img src="Data/Additional/sight-2.jpg" alt="Світлові ефекти" class="modal-detail-img">
+            </div>
+
+            <div class="usage-instruction">
+                <h4>Інструктаж:</h4>
+                <ul>
+                    <li>👁️ Максимальна тривалість: 10 хвилин</li>
+                    <li>💡 Використовуйте при тьмяному освітленні</li>
+                    <li>🚸 Супроводжуйте дітей до 7 років</li>
+                    <li>🔋 Зарядна станція в комплекті</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+
+    document.querySelectorAll('.module-card').forEach(card => {
+    card.addEventListener('click', function() {
+        const senseMap = {
+        'Нюх': 'smellModal',
+        'Слух': 'hearingModal',
+        'Смак': 'tasteModal',
+        'Дотик': 'touchModal',
+        'Зір': 'sightModal'
+        };
+        
+        const senseTitle = this.querySelector('h3').textContent.trim();
+        const modalId = senseMap[senseTitle];
+        
+        if(modalId) {
+        const modal = document.getElementById(modalId);
+        const overlay = document.getElementById('modalOverlay');
+        
+        modal.classList.add('active');
+        overlay.classList.add('active');
+        document.body.classList.add('no-scroll');
+        }
+    });
+    });
+
+    document.querySelectorAll('.modal-close, .modal-overlay').forEach(el => {
+    el.addEventListener('click', () => {
+        document.querySelectorAll('.modal').forEach(modal => {
+        modal.classList.remove('active');
+        });
+        document.getElementById('modalOverlay').classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    });
+    });
+
+    document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => {
+        modal.classList.remove('active');
+        });
+        document.getElementById('modalOverlay').classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+    });
+    </script>
 </body>
 </html>
