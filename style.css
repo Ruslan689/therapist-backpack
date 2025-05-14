@@ -1,0 +1,381 @@
+/* Базові стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Хедер */
+.header {
+    background: linear-gradient(135deg, #5b7c99 0%, #3b5266 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Кнопки */
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.youtube-btn {
+    background-color: #ff4b4b;
+    color: white;
+}
+
+.instruction-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Секції інструкції */
+.manual-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.manual-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+.warning-banner {
+    background: #fff3cd;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    border-left: 4px solid #ffc107;
+}
+
+/* Застереження */
+.safety-section {
+    margin-top: 3rem;
+}
+
+.warning-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.warning-card.red {
+    background: #f8d7da;
+    border-left: 4px solid #dc3545;
+}
+
+/* Футер */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Стилі для нових секцій */
+
+/* Секція слуху */
+.warning-card.blue {
+    background: #d1ecf1;
+    border-left: 4px solid #0dcaf0;
+}
+
+/* Секція смаку */
+.grid-container.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.taste-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.taste-card.yellow { background: #ffc107; }
+.taste-card.red { background: #dc3545; }
+.taste-card.brown { background: #6f42c1; }
+
+.usage-instruction {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+/* Секція дотику */
+.touch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.texture-card {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.texture-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+.texture-preview.fur { background: url('fur-texture.jpg'); }
+.texture-preview.jute { background: url('jute-texture.jpg'); }
+.texture-preview.liquid { background: url('liquid-texture.jpg'); }
+
+/* Секція зору */
+.vision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.blue-bg { background: #0d6efd; }
+.yellow-bg { background: #ffc107; }
+.green-bg { background: #198754; }
+
+/* Додаткові елементи */
+.accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.accessory-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Адаптація */
+@media (max-width: 768px) {
+    .grid-container.three-col {
+        grid-template-columns: 1fr;
+    }
+    
+    .vision-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Стилі для секції застережень */
+.safety-section {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.safety-title {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.warnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.warning-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    min-height: 220px;
+}
+
+.warning-card.red { background: #f8d7da; border-left: 5px solid #dc3545; }
+.warning-card.orange { background: #fff3cd; border-left: 5px solid #ffc107; }
+.warning-card.purple { background: #e2d9f3; border-left: 5px solid #6f42c1; }
+.warning-card.gray { background: #f8f9fa; border-left: 5px solid #6c757d; }
+
+.warning-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.warning-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.warning-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.warning-list li::before {
+    content: "•";
+    color: #dc3545;
+    position: absolute;
+    left: 0;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #eee;
+    padding-top: 2rem;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-link:hover {
+    color: #0d6efd;
+}
+
+.qr-code {
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.qr-code img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-items {
+        align-items: center;
+    }
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 співвідношення */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
